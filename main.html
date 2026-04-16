@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+    margin: 0;
+    font-family: "Zalando Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+/*===background image===*/
+    height: 100vh;
+    overflow: hidden;  /* no scrollbar will appear */
+    background-image: url('../img/ChatGPT Image Apr 15, 2026, 05_47_18 PM.png'); /*background img*/
+    background-size: cover;/* will cover the whole screen*/
+    background-position: center;/*pic in the center*/
+}
+
+.main-text{
+   text-align: center;
+   text-shadow: 0px 0px 10px #00d4ff;
+   font-size:18px;
+   font-weight: 200;
+}
+
+/*carousel*/
+
+.carousel{
+    margin:100px auto;
+    width:90%;
+    border:5px solid white;
+    display: flex;
+}
+.group{
+ display: flex ;  
+ align-items: center;
+ justify-content: center;
+ gap: 1em;
+}
+.card{
+    height: 5em;
+    padding: 1em;
+    background-color: #C7B7A3;
+    
+
+}
+
+    </style>
+</head>
+
+<body>
+      <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <div class="main-text">
+            Choose one from the categories below and see how many questions you can answer correctly!!
+        </div>
+    </div>
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="carousel">
+                <div class="group">
+                    <div class="card">1</div>
+                    <div class="card">2</div>
+                    <div class="card">3</div>
+                    <div class="card">4</div>
+                    <div class="card">5</div>
+                    <div class="card">6</div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+</body>
+
+</html>
