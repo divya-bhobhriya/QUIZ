@@ -4,144 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index page</title>
+    <title>main page</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
     <style>
-    body {
-    margin: 0;
-/*===background image===*/
-    height: 100vh;
-    overflow: hidden;  /* no scrollbar will appear */
-    background-image: url('img/background.png'); /*background img*/
-    background-size: cover;/* will cover the whole screen*/
-    background-position: center;/*pic in the center*/
+        body {
+            margin: 0;
+            /*===background image===*/
+            height: 100vh;
+            overflow: hidden;
+            /* no scrollbar will appear */
+            background-image: url('img/background.png');
+            /*background img*/
+            background-size: cover;
+            /* will cover the whole screen*/
+            background-position: center;
+            /*pic in the center*/
+        }
+
+        .container {
+            width: 80vw;
+            margin: auto;
+        }
+
+
+        .main-text {
+            text-align: center;
+            color: white;
+            text-shadow: 0 0 5px #00d4ff,
+                0 0 15px #00d4ff,
+                0 0 30px #00d4ff,
+                0 0 60px #00d4ff;
+            ;
+            font-size: 25px;
+            font-weight: 200;
+            border: none;
+        }
+
+        /*carousel*/
+
+        .carousel {
+            margin: 100px auto;
+            width: 90%;
+            border: 5px solid none;
+            display: flex;
+            overflow-x: auto;
+            position: relative;
+        }
+
+        .carousel::-webkit-scrollbar {
+            display: none;
+        }
+
+        .group {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2em;
+            animation: spin 5s linear;
+            padding-right: 1em;
+        }
+
+        .card {
+            flex: 0 0 5em;
+            height: 5em;
+            background-color: #C7B7A3;
+            font-size: 2.5rem;
+            border-radius: 30px;
+            text-align: center;
+            align-content: center;
+            overflow: hidden;
+            /*stop image out from card*/
+            animation: beat 2sec infinite; 
+            }
+
+        card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /*to make the image size of carsoule*/
+            border: radius 20px;
+            display: block;
+        }
+
+
+        /*shadow of images*/
+
+        .img-bio {
+            box-shadow: 0px 0px 15px rgb(95, 199, 63);
+        }
+
+        .img-chem {
+            box-shadow: 0px 0px 15px rgb(18, 88, 219);
+        }
+
+        .img-geo {
+            box-shadow: 0px 0px 15px rgb(27, 146, 193);
+        }
+
+        .img-maths {
+            box-shadow: 0px 0px 15px rgb(76, 131, 197);
+        }
+
+        .img-phyco {
+            box-shadow: 0px 0px 15px rgb(255, 75, 204);
+        }
+
+        .img-phys {
+            box-shadow: 0px 0px 15px rgb(165, 59, 40);
+        }
+
+        /*responsive*/
+        a {
+            display: flex;
+            text-decoration: none;
+        }
+
+        /*animation in the cards*/
+        @keyframes beatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
 }
 
-.container{
-    width:80vw;
-    margin: auto;
+@keyframes beatDown {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
 }
 
-
-.main-text{
-   text-align: center;
-   color:white;
-   text-shadow:  0 0 5px #00d4ff,
-        0 0 15px #00d4ff,
-        0 0 30px #00d4ff,
-        0 0 60px #00d4ff;;
-   font-size:25px;
-   font-weight: 200;
-   border:none;
+.animation1{
+     animation: beatUp 0.6s infinite;
 }
-
-/*carousel*/
-
-.carousel{
-    margin:100px auto;   
-    width:90%;
-    border:5px solid none;
-    display: flex;
-    overflow-x:auto;
+.animation2{
+    animation: beatDown 0.6s infinite;
 }
-.carousel::-webkit-scrollbar{
-    display:none;
-}
-.group{
- display: flex ;  
- align-items: center;
- justify-content: center;
- gap: 2em;
- animation:spin 5s linear;
- padding-right: 1em ;    
-}
-
-.card{
-    flex: 0 0 5em;
-    height: 5em;
-    background-color: #C7B7A3;
-    font-size: 2.5rem;
-    border-radius: 30px;
-    text-align: center;
-    align-content:center;
-    overflow: hidden;/*stop image out from card*/
-}
-card img{
-    width: 100%;
-    height: 100%;
-    object-fit:cover;/*to make the image size of carsoule*/
-    border: radius 20px;
-    display:block;
-}
- /*shadow of images*/
-
- .img-bio{
-    box-shadow: 0px 0px 15px rgb(95, 199, 63);
- }
- .img-chem{
-    box-shadow:0px 0px 15px rgb(18, 88, 219) ;
- }
- .img-geo{
-    box-shadow:0px 0px 15px rgb(27, 146, 193)  ;
- }
- .img-maths{
-    box-shadow:0px 0px 15px rgb(76, 131, 197) ;
- }
- .img-phyco{
-    box-shadow:0px 0px 15px rgb(255, 75, 204) ;
- }
- .img-phys{
-    box-shadow:0px 0px 15px rgb(165, 59, 40) ;
- }
- 
-
     </style>
 </head>
 
 <body>
-      <div class="position-absolute top-50 start-50 translate-middle text-center">
-        <div class="main-text">
+    <div class="position-absolute top-50 start-50 translate-middle text-center">
+        <div class="main-text pt-3">
             Choose one from the categories below and see how many questions you can answer correctly!!
         </div>
         <section>
-        <div class="container">
-            <div class="carousel">
-                <div class="group ps-1 pt-1 pb-1">
-                    <div class="card img-bio">
-                        <img src="img/biology.png" class="w-100" alt="">
-                    </div>
-                    <div class="card img-chem">
-                        <img src="img/chemistry.png" class="w-100" alt="">
-                    </div>
-                    <div class="card img-geo">
-                        <img src="img/geographyy.png" class="w-100" alt="">
-                    </div>
-                    <div class="card img-maths">
-                        <img src="img/maths.png" class="w-100" alt="">
-                    </div>
-                    <div class="card img-phyco">
-                        <img src="img/phycology.png" class="w-100" alt="">
-                    </div>
-                    <div class="card img-phys">
-                        <img src="img/physics.png" class="w-100" alt="">
+            <div class="container">
+                <div class="carousel">
+                    <div class="group ps-1 pt-1 pb-1">
+                        <a href="quiz.html?subject=biology">
+                            <div class="card img-bio animation2">
+                                <img src="img/biology.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=chemistry">
+                            <div class="card img-chem animation1">
+                                <img src="img/chemistry.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=geography">
+                            <div class="card img-geo animation2">
+                                <img src="img/geographyy.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=maths">
+                            <div class="card img-maths animation1">
+                                <img src="img/maths.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=phycology">
+                            <div class="card img-phyco animation2">
+                                <img src="img/phycology.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=physics">
+                            <div class="card img-phys animation1">
+                                <img src="img/physics.png" class="w-100" alt="">
+                            </div>
+                        </a>
                     </div>
                 </div>
-               <!-- <div aria-hidden class="group">
-                    <div class="card">1</div>
-                    <div class="card">2</div>
-                    <div class="card">3</div>
-                    <div class="card">4</div>
-                    <div class="card">5</div>
-                    <div class="card">6</div>
-                </div>-->
+                <div style="margin-top: -0px;"><label for=""><i class="fa-solid fa-angles-right fa-bounce" style="color:white; text-shadow:0px 0px 30px rgb(68, 164, 237); font-size:30px;"></i></label></div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
 
 
-   
-        
+
+
+
+    <script>
+
+    </script>
+
 </body>
 
 </html>
