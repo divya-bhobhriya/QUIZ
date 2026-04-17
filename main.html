@@ -9,8 +9,6 @@
     <style>
     body {
     margin: 0;
-
-
 /*===background image===*/
     height: 100vh;
     overflow: hidden;  /* no scrollbar will appear */
@@ -20,7 +18,7 @@
 }
 
 .container{
-    width:90vw;
+    width:80vw;
     margin: auto;
 }
 
@@ -53,7 +51,7 @@
  display: flex ;  
  align-items: center;
  justify-content: center;
- gap: 1em;
+ gap: 2em;
  animation:spin 5s linear;
  padding-right: 1em ;    
 }
@@ -75,11 +73,25 @@ card img{
     border: radius 20px;
     display:block;
 }
- .img-shadow{
-    box-shadow: 0px 0px 10px rgb(255, 75, 204);
+ /*shadow of images*/
+
+ .img-bio{
+    box-shadow: 0px 0px 15px rgb(95, 199, 63);
  }
- .img-shadoww{
-    box-shadow: 0px 0px 10px #00d4ff;
+ .img-chem{
+    box-shadow:0px 0px 15px rgb(18, 88, 219) ;
+ }
+ .img-geo{
+    box-shadow:0px 0px 15px rgb(27, 146, 193)  ;
+ }
+ .img-maths{
+    box-shadow:0px 0px 15px rgb(76, 131, 197) ;
+ }
+ .img-phyco{
+    box-shadow:0px 0px 15px rgb(255, 75, 204) ;
+ }
+ .img-phys{
+    box-shadow:0px 0px 15px rgb(165, 59, 40) ;
  }
  
 
@@ -94,23 +106,23 @@ card img{
         <section>
         <div class="container">
             <div class="carousel">
-                <div class="group">
-                    <div class="card img-shadow">
+                <div class="group ps-1 pt-1 pb-1">
+                    <div class="card img-bio">
                         <img src="img/biology.png" class="w-100" alt="">
                     </div>
-                    <div class="card img-shadoww">
+                    <div class="card img-chem">
                         <img src="img/chemistry.png" class="w-100" alt="">
                     </div>
-                    <div class="card img-shadow">
-                        <img src="img/geography.png" class="w-100" alt="">
+                    <div class="card img-geo">
+                        <img src="img/geographyy.png" class="w-100" alt="">
                     </div>
-                    <div class="card img-shadoww">
+                    <div class="card img-maths">
                         <img src="img/maths.png" class="w-100" alt="">
                     </div>
-                    <div class="card img-shadow">
+                    <div class="card img-phyco">
                         <img src="img/phycology.png" class="w-100" alt="">
                     </div>
-                    <div class="card img-shadoww">
+                    <div class="card img-phys">
                         <img src="img/physics.png" class="w-100" alt="">
                     </div>
                 </div>
