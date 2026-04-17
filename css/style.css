@@ -7,13 +7,6 @@ body {
     font-weight: 300;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-
-/*===background image===*/
-    height: 100vh;
-    overflow: hidden;  /* no scrollbar will appear */
-    background-image: url('../img/ChatGPT Image Apr 15, 2026, 05_47_18 PM.png'); /*background img*/
-    background-size: cover;/* will cover the whole screen*/
-    background-position: center;/*pic in the center*/
 }
 
 .container {
