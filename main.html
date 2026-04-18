@@ -79,8 +79,8 @@
             align-content: center;
             overflow: hidden;
             /*stop image out from card*/
-            animation: beat 2sec infinite; 
-            }
+            animation: beat 2sec infinite;
+        }
 
         card img {
             width: 100%;
@@ -126,21 +126,36 @@
 
         /*animation in the cards*/
         @keyframes beatUp {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-}
 
-@keyframes beatDown {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
-}
+            0%,
+            100% {
+                transform: translateY(0);
+            }
 
-.animation1{
-     animation: beatUp 0.9s infinite;
-}
-.animation2{
-    animation: beatDown 0.9s infinite;
-}
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes beatDown {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(10px);
+            }
+        }
+
+        .animation1 {
+            animation: beatUp 0.9s infinite;
+        }
+
+        .animation2 {
+            animation: beatDown 0.9s infinite;
+        }
     </style>
 </head>
 
@@ -185,18 +200,12 @@
                         </a>
                     </div>
                 </div>
-                <div style="margin-top: -0px;"><label for=""><i class="fa-solid fa-angles-right fa-bounce" style="color:white; text-shadow:0px 0px 30px rgb(68, 164, 237); font-size:30px;"></i></label></div>
+                <div style="margin-top: -0px;"><label for=""><i class="fa-solid fa-angles-right fa-bounce"
+                            style="color:white; text-shadow:0px 0px 30px rgb(68, 164, 237); font-size:30px;"></i></label>
+                </div>
             </div>
         </section>
     </div>
-
-
-
-
-
-    <script>
-
-    </script>
 
 </body>
 
