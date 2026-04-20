@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Cube</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width:100vw;
+      height: 100vh;
+      box-sizing: border-box;
+      overflow: hidden;
+      background-image: url('img/purpletheme2.png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    spline-viewer {
+      width: 100%;
+      height: 100vh;
+      display: block;
+      size: 1000px;
+      margin-left: 450px;
+      animation: floatRotate 6s ease-in-out infinite;
+      filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #00ffff) drop-shadow(0 0 40px #ff00ff) drop-shadow(0 0 80px #00ffff);
+    }
+
+
+
+    /* Glow color change animation */
+    @keyframes floatRotate {
+      0% {
+        filter: drop-shadow(0 0 10px #2b103c) drop-shadow(0 0 30px #2b103c) drop-shadow(0 0 60px #2b103c);
+      }
+
+      25% {
+        filter: drop-shadow(0 0 10px #3d2a5d) drop-shadow(0 0 30px #3d2a5d) drop-shadow(0 0 60px #3d2a5d);
+      }
+
+      50% {
+        filter: drop-shadow(0 0 10px #572866) drop-shadow(0 0 30px #572866) drop-shadow(0 0 60px #572866);
+      }
+
+      75% {
+        filter: drop-shadow(0 0 10px #8f529b) drop-shadow(0 0 30px #8f529b) drop-shadow(0 0 60px #8f529b);
+      }
+
+      100% {
+        filter: drop-shadow(0 0 10px #ac91c0) drop-shadow(0 0 30px #ac91c0) drop-shadow(0 0 60px #ac91c0);
+      }
+    }
+
+    .theme {}
+  </style>
 </head>
+
 <body>
-    <h1>hello</h1>
-    <h2>hello</h2>
-    <h3>hello</h3>
+
+
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.86/build/spline-viewer.js"></script>
+  <spline-viewer url="https://prod.spline.design/thDA4oP91tk7NSIt/scene.splinecode"
+    class="position-absolute"></spline-viewer>
+
+
 </body>
+
 </html>
