@@ -10,24 +10,26 @@
     body {
       margin: 0;
       padding: 0;
-      width:100vw;
+      width: 100vw;
       height: 100vh;
-      background: radial-gradient(circle, #9B8EC7, #0B2D72, #5b56b6 );
-      /* box-sizing: border-box;
+      background: radial-gradient(circle at 50% 15%, rgba(224, 198, 253, 0.28), transparent 24%), linear-gradient(180deg, rgba(17, 41, 96, 0.88), rgba(5, 15, 38, 0.95));
       overflow: hidden;
-      background-image: url('img/download (4).jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat; */
+      
     }
 
     spline-viewer {
       width: 100%;
-      height: 100vh;
+      /* height: 100vh; */
       display: block;
       margin-left: 450px;
       animation: floatRotate 6s ease-in-out infinite;
       filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #00ffff) drop-shadow(0 0 40px #ff00ff) drop-shadow(0 0 80px #00ffff);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transform: scale(0.8);
+      transform-origin: center center;
     }
 
 
@@ -55,22 +57,72 @@
       }
     }
 
+    .home-container {
+      outline-color: #3f6993;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 36px 36px;
+      border-radius: 20px;
+      height: 600px;
+      margin-top: 50px;
+      border: #00ffff;
+      border: 1px solid rgba(224, 198, 253, 0.18);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
+      position: relative;
+    }
+
+    .quiz-mark {
+      border-radius: 20px;
+      background: linear-gradient(140deg, #9b8ec7 0%, #5b56b6 50%, #80aad3 100%);
+      /* align-items: center; */
+      font-weight: 800;
+      box-shadow: 0 12px 30px rgba(91, 86, 182, 0.45);
+      padding: 5px 20px;
+      color: #fff;
+      width: 20px;
+      display: grid;
+      font-size: xx-large;
+      font-family: "Syne", sans-serif;
+      margin: 1px;
+      display: felx;
+    }
+
+    .quiz-logo {
+       border-radius: 20px;
+      font-weight: 800;
+      color: #fff;
+      width: 20px;
+      display: grid;
+      font-size: xx-large;
+      font-family: "Syne", sans-serif;
+      display: felx;
+      align-items:center;
+    }
+
   </style>
 </head>
 
 <body>
 
-  <div class="col-12">
+  <div class="container-80">
 
-  </div>
+    <div class="col-12 home-container">
 
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.87/build/spline-viewer.js"></script>
-<spline-viewer url="https://prod.spline.design/1sap9lWvz6MO7yht/scene.splinecode"></spline-viewer>
+      <div class="d-flex m-1">
+        <div class="quiz-mark">Q
 
-<h1>hello
-</h1>
+        </div>
+        <div class="quiz-logo">uizkaroo</div>
+      </div>
 
-<h2>hello </h2>
+
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.87/build/spline-viewer.js"></script>
+      <spline-viewer url="https://prod.spline.design/1sap9lWvz6MO7yht/scene.splinecode"></spline-viewer>
+    </div>
+
+
+
+
+
 
 </body>
 
