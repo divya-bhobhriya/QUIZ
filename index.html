@@ -14,7 +14,7 @@
       height: 100vh;
       background: radial-gradient(circle at 50% 15%, rgba(224, 198, 253, 0.28), transparent 24%), linear-gradient(180deg, rgba(17, 41, 96, 0.88), rgba(5, 15, 38, 0.95));
       overflow: hidden;
-      
+
     }
 
     spline-viewer {
@@ -30,6 +30,22 @@
       z-index: 1;
       transform: scale(0.8);
       transform-origin: center center;
+    }
+
+    @media (max-width:1024px) {
+      spline-viewer {
+        width: 100%;
+        display: block;
+        margin-left: 250px;
+        animation: floatRotate 6s ease-in-out infinite;
+        filter: drop-shadow(0 0 10px #ff00ff) drop-shadow(0 0 20px #00ffff) drop-shadow(0 0 40px #ff00ff) drop-shadow(0 0 80px #00ffff);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transform: scale(0.5);
+        transform-origin: center center;
+      }
     }
 
 
@@ -62,7 +78,7 @@
       background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
       background-size: 36px 36px;
       border-radius: 20px;
-      height: 600px;
+      height: 80vh;
       margin-top: 50px;
       border: #00ffff;
       border: 1px solid rgba(224, 198, 253, 0.18);
@@ -87,7 +103,7 @@
     }
 
     .quiz-logo {
-       border-radius: 20px;
+      border-radius: 20px;
       font-weight: 800;
       color: #fff;
       width: 20px;
@@ -95,9 +111,8 @@
       font-size: xx-large;
       font-family: "Syne", sans-serif;
       display: felx;
-      align-items:center;
+      align-items: center;
     }
-
   </style>
 </head>
 
@@ -105,14 +120,25 @@
 
   <div class="container-80">
 
-    <div class="col-12 home-container">
+    <div class="home-container">
 
       <div class="d-flex m-1">
-        <div class="quiz-mark">Q
-
-        </div>
+        <div class="quiz-mark">Q</div>
         <div class="quiz-logo">uizkaroo</div>
       </div>
+      <div class="col-12">
+        <div class="col-6 p-5">
+          <div class="home-content">Challenge your Knowledge</div>
+          <div class="description">Explore a world of fun and learning with a wide range of trivia questions and
+            puzzles.
+            Challenge youself , compete with friends and expand your horizon.</div>
+          <button class="play-button">Let's Play</button>
+        </div>
+      </div>
+
+
+
+
 
 
       <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.87/build/spline-viewer.js"></script>
