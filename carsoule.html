@@ -87,9 +87,9 @@
 
         .card {
             flex: 0 0 5em;
-            height: 4em;
+            height: 3.7em;
             background-color: #C7B7A3;
-            font-size: 2.6rem;
+            font-size: 3rem;
             border-radius: 30px;
             text-align: center;
             align-content: center;
@@ -108,60 +108,40 @@
         }
 
 
-        /*shadow of images
-         .img-bio {
-            box-shadow: 0px 0px 15px rgb(95, 199, 63);
-            outline: ;
-        }
-
-        .img-chem {
-            box-shadow: 0px 0px 15px rgb(18, 88, 219);
-        }
-
-        .img-geo {
-            box-shadow: 0px 0px 15px rgb(27, 146, 193);
-        }
-
-        .img-maths {
-            box-shadow: 0px 0px 15px rgb(76, 131, 197);
-        }
-
-        .img-phyco {
-            box-shadow: 0px 0px 15px rgb(255, 75, 204);
-        }
-
-        .img-phys {
-            box-shadow: 0px 0px 15px rgb(165, 59, 40);
-        }*/
-
-    
+       
 
 
         .card-b {
-  border-color: rgba(77, 163, 255, 0.25);
+  border: 1.5px solid rgba(0, 212, 255, 0.35);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.4);
+
 }
+  
 
 .card-b:hover {
-  border-color: #4da3ff;
-  box-shadow: 0 10px 30px rgba(77, 163, 255, 0.25);
-   /* THIS is the visible glow */
+ border-color: #00d4ff;
+
   box-shadow:
-    0 0 0 1px rgba(77, 163, 255, 0.4),
-    0 8px 25px rgba(0, 0, 0, 0.4),
-    0 0 25px rgba(77, 163, 255, 0.25);
+    0 0 0 1px rgba(0, 212, 255, 0.5),
+    0 8px 25px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(0, 212, 255, 0.28);
 }
 
 .card-a {
-  border-color: rgba(140, 120, 255, 0.4);
+  border: 1.5px solid rgba(0, 212, 255, 0.35);
+  box-shadow: 
+    0 6px 20px rgba(0, 0, 0, 0.4);
+
 }
 
 .card-a:hover {
-  border-color: #8c78ff;
+ border-color: #00d4ff;
 
   box-shadow:
-    0 0 0 1px rgba(140, 120, 255, 0.4),
-    0 8px 25px rgba(0, 0, 0, 0.4),
-    0 0 25px rgba(140, 120, 255, 0.25);
+    0 0 0 1px rgba(0, 212, 255, 0.5),
+    0 8px 25px rgba(0, 0, 0, 0.45),
+    0 0 28px rgba(0, 212, 255, 0.28);
 }
 
 
@@ -208,26 +188,26 @@
 
 <body>
     <div class="position-absolute top-50 start-50 translate-middle text-center">
-        <div class="main-text pt-3">
-            Choose one from the categories below and see how many questions you can answer correctly!!
-        </div>
         <section>
             <div class="container">
+                <div class="main-text pt-4 ps-2 pe-2">
+                    Choose one from the categories below and see how many questions you can answer correctly!!
+                </div>
                 <div class="carousel">
                     <div class="group ps-1 pt-1 pb-1">
                         <a href="quiz.html?subject=biology">
                             <div class="card img-bio  card-a animation2">
-                                <img src="img/biologyyy.png" class="w-100" alt="">
+                                <img src="img/biology.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=chemistry">
                             <div class="card img-chem card-a animation1">
-                                <img src="img/chemistryy.png" class="w-100" alt="">
+                                <img src="img/chemistry.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=phycology">
                             <div class="card img-phyco card-a animation2">
-                                <img src="img/phycologyyy.png" class="w-100" alt="">
+                                <img src="img/phycologyy.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=geography">
@@ -237,17 +217,17 @@
                         </a>
                         <a href="quiz.html?subject=maths">
                             <div class="card img-maths card-b animation2">
-                                <img src="img/mathsss.png" class="w-100" alt="">
+                                <img src="img/maths.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=physics">
                             <div class="card img-phys card-b animation1">
-                                <img src="img/physicss.png" class="w-100" alt="">
+                                <img src="img/physics.png" class="w-100" alt="">
                             </div>
                         </a>
                     </div>
                 </div>
-                <div style="margin-top: -0px;"><label for=""><i class="fa-solid fa-angles-right fa-bounce"
+                <div style="margin-bottom: 30px;"><label for=""><i class="fa-solid fa-angles-right fa-bounce"
                             style="color:white; text-shadow:0px 0px 30px rgb(68, 164, 237); font-size:30px;"></i></label>
                 </div>
             </div>
