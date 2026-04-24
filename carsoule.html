@@ -87,9 +87,9 @@
 
         .card {
             flex: 0 0 5em;
-            height: 5em;
+            height: 4em;
             background-color: #C7B7A3;
-            font-size: 2.5rem;
+            font-size: 2.6rem;
             border-radius: 30px;
             text-align: center;
             align-content: center;
@@ -108,10 +108,10 @@
         }
 
 
-        /*shadow of images*/
-
-        .img-bio {
+        /*shadow of images
+         .img-bio {
             box-shadow: 0px 0px 15px rgb(95, 199, 63);
+            outline: ;
         }
 
         .img-chem {
@@ -132,8 +132,47 @@
 
         .img-phys {
             box-shadow: 0px 0px 15px rgb(165, 59, 40);
-        }
+        }*/
 
+    
+
+
+        .card-b {
+  border-color: rgba(77, 163, 255, 0.25);
+}
+
+.card-b:hover {
+  border-color: #4da3ff;
+  box-shadow: 0 10px 30px rgba(77, 163, 255, 0.25);
+   /* THIS is the visible glow */
+  box-shadow:
+    0 0 0 1px rgba(77, 163, 255, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(77, 163, 255, 0.25);
+}
+🟣 BOTTOM ROW GLOW (Chem, Psy, Bio)
+.card-bottom {
+  border-color: rgba(140, 120, 255, 0.4);
+}
+
+.card-bottom:hover {
+  border-color: #8c78ff;
+
+  box-shadow:
+    0 0 0 1px rgba(140, 120, 255, 0.4),
+    0 8px 25px rgba(0, 0, 0, 0.4),
+    0 0 25px rgba(140, 120, 255, 0.25);
+}
+
+
+.card-a {
+  border-color: rgba(140, 120, 255, 0.25);
+}
+
+.card-a:hover {
+  border-color: #8c78ff;
+  box-shadow: 0 10px 30px rgba(140, 120, 255, 0.25);
+}
         /*responsive*/
         a {
             display: flex;
@@ -185,33 +224,33 @@
                 <div class="carousel">
                     <div class="group ps-1 pt-1 pb-1">
                         <a href="quiz.html?subject=biology">
-                            <div class="card img-bio animation2">
-                                <img src="img/biology.png" class="w-100" alt="">
+                            <div class="card img-bio  card-a animation2">
+                                <img src="img/biologyyy.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=chemistry">
-                            <div class="card img-chem animation1">
-                                <img src="img/chemistry.png" class="w-100" alt="">
-                            </div>
-                        </a>
-                        <a href="quiz.html?subject=geography">
-                            <div class="card img-geo animation2">
-                                <img src="img/geographyy.png" class="w-100" alt="">
-                            </div>
-                        </a>
-                        <a href="quiz.html?subject=maths">
-                            <div class="card img-maths animation1">
-                                <img src="img/maths.png" class="w-100" alt="">
+                            <div class="card img-chem card-a animation1">
+                                <img src="img/chemistryy.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=phycology">
-                            <div class="card img-phyco animation2">
-                                <img src="img/phycology.png" class="w-100" alt="">
+                            <div class="card img-phyco card-a animation2">
+                                <img src="img/phycologyyy.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=geography">
+                            <div class="card img-geo card-b animation1">
+                                <img src="img/geography.png" class="w-100" alt="">
+                            </div>
+                        </a>
+                        <a href="quiz.html?subject=maths">
+                            <div class="card img-maths card-b animation2">
+                                <img src="img/mathsss.png" class="w-100" alt="">
                             </div>
                         </a>
                         <a href="quiz.html?subject=physics">
-                            <div class="card img-phys animation1">
-                                <img src="img/physics.png" class="w-100" alt="">
+                            <div class="card img-phys card-b animation1">
+                                <img src="img/physicss.png" class="w-100" alt="">
                             </div>
                         </a>
                     </div>
